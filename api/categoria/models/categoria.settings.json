@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categorias",
+  "info": {
+    "name": "Categoria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nombre": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "productos": {
+      "collection": "productos",
+      "via": "categorias",
+      "dominant": true
+    }
+  }
+}
