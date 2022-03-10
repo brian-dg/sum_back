@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "productos",
   "info": {
-    "name": "Productos"
+    "name": "Productos",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,15 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nombre": {
-      "type": "string",
-      "required": true
-    },
-    "Descripcion": {
-      "type": "text",
-      "required": true
-    },
-    "Imagen": {
+    "imagen": {
       "collection": "file",
       "via": "related",
       "allowedTypes": [
@@ -29,17 +22,24 @@
       "required": true,
       "pluginOptions": {}
     },
-    "Precio": {
+    "precio": {
       "type": "decimal",
       "required": true
     },
     "url": {
-      "type": "uid",
-      "targetField": "Nombre"
+      "type": "uid"
     },
     "categorias": {
       "via": "productos",
       "collection": "categoria"
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
     }
   }
 }

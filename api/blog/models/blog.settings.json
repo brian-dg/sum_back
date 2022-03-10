@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "blogs",
   "info": {
-    "name": "Blog"
+    "name": "Blog",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Nombre": {
-      "type": "string",
-      "required": true
-    },
     "resumen": {
       "type": "text",
       "required": true
@@ -30,8 +27,7 @@
       "pluginOptions": {}
     },
     "url": {
-      "type": "uid",
-      "targetField": "Nombre"
+      "type": "uid"
     },
     "precio": {
       "type": "integer"
