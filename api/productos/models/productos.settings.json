@@ -27,7 +27,8 @@
       "required": true
     },
     "url": {
-      "type": "uid"
+      "type": "uid",
+      "targetField": "nombre"
     },
     "categorias": {
       "via": "productos",
