@@ -17,7 +17,7 @@
       "required": true
     },
     "imagen": {
-      "model": "file",
+      "collection": "file",
       "via": "related",
       "allowedTypes": [
         "images"
